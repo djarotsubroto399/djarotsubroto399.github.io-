@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Adeek 💖</title>
+  <style>
+    body {
+      background: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      animation: pulse 1s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      background: #ff3366;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      top: 0;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 50px;
+      transform: rotate(45deg);
+    }
+
+    .text {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">
+    <div class="text">adeek</div>
+  </div>
+</body>
+</html>
